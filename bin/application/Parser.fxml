@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane focusTraversable="true" prefHeight="800.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ParserController">
+   <top>
+      <ImageView fitHeight="180.0" fitWidth="591.0" pickOnBounds="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../../Downloads/pexels-karol-d-1013516.jpg" />
+         </image>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+      </ImageView>
+   </top>
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="580.0" BorderPane.alignment="CENTER">
+        <buttons>
+            <Button fx:id="recherche" minWidth="58.0" mnemonicParsing="false" onAction="#displayText" prefHeight="25.0" text="Recherche">
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding></Button>
+            <Button fx:id="fermerBouton" mnemonicParsing="false" onAction="#fermerBoutonOnAction" text="Fermer" />
+        </buttons>
+         <BorderPane.margin>
+            <Insets right="10.0" />
+         </BorderPane.margin>
+      </ButtonBar>
+   </bottom>
+   <left>
+      <AnchorPane prefHeight="570.0" prefWidth="222.0" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="combobox" layoutX="25.0" layoutY="14.0" prefWidth="150.0" promptText="Choix types" />
+            <ComboBox fx:id="combobox1" layoutX="25.0" layoutY="46.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox2" layoutX="25.0" layoutY="81.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox3" layoutX="25.0" layoutY="116.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox8" layoutX="25.0" layoutY="298.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox7" layoutX="25.0" layoutY="260.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox6" layoutX="25.0" layoutY="224.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox4" layoutX="25.0" layoutY="151.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox5" layoutX="25.0" layoutY="187.0" prefWidth="150.0" />
+            <Label layoutX="25.0" layoutY="501.0" prefHeight="17.0" prefWidth="34.0" text="Row:" />
+            <TextField layoutX="59.0" layoutY="497.0" prefHeight="25.0" prefWidth="41.0" />
+            <ComboBox fx:id="combobox9" layoutX="25.0" layoutY="334.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox10" layoutX="25.0" layoutY="370.0" prefWidth="150.0" />
+            <ComboBox fx:id="combobox11" layoutX="25.0" layoutY="410.0" prefWidth="150.0" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextArea fx:id="texte" layoutX="14.0" layoutY="85.0" prefHeight="570.0" prefWidth="214.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+   </right>
+   <center>
+      <AnchorPane prefHeight="570.0" prefWidth="89.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="texto" layoutX="14.0" layoutY="14.0" text="Label" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
